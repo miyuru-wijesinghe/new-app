@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap');
+
+.consultation-scheduler {
+  padding: 3rem 1.5rem;
+  max-width: 1490px;
+  margin: auto;
+  position: relative;
+
+  h1 {
+    color: #00593D;
+    font-family: "PT Sans";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 72px;
+    
+    letter-spacing: -1.28px;
+    margin-bottom: 3rem;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -15rem;
+      width: 220px;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      height: 15px;
+      background-color: #2EFFBA;
+      margin-top: 32px;
+    }
+  }
+
+  .main-container {
+    display: flex;
+    background-color: #a7f3d0;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    height: 650px;
+
+  }
+
+  .profile-card {
+    position: relative;
+    width: 19%;
+    background-color: #08E59C;
+    padding: 9rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+    border-right: 1px solid #000000;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      left: 0;
+      background-color: #000000;
+      margin-top: 36px;
+    }
+
+    .profile-picture {
+      width: 5rem;
+      height: 5rem;
+      background-color: #d1fae5;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        position: relative;
+        z-index: 1;
+      }
+    }
+
+    h3 {
+      color: #EAFFF8;
+      font-family: Roboto;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: -0.36px;
+    }
+
+    h6 {
+      color: #00593D;
+      font-family: Roboto;
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 32px;
+      letter-spacing: -0.56px;
+    }
+
+    .details {
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .details p {
+      display: flex;
+      gap: 15px;
+      color: #EAFFF8;
+      font-family: Roboto;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 24px;
+      letter-spacing: -0.36px;
+    }
+  }
+
+  .calendar-section {
+    width: 53%;
+    background-color: #08E59C;
+    padding: 4rem;
+    text-align: center;
+
+    h3 {
+      color: #000;
+      font-family: Arvo;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px;
+      letter-spacing: -0.48px;
+      text-align: left;
+      margin-bottom: 3rem;
+    }
+  }
+
+  .time-selector {
+    width: 28%;
+    background-color: #08E59C;
+    padding: 4rem 2.5rem;
+    text-align: center;
+    border-left: 1px solid #000000;
+
+    h3 {
+      color: #000;
+      font-family: Arvo;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px;
+      letter-spacing: -0.48px;
+      text-align: left;
+      padding-bottom: 3rem;
+    }
+
+    button {
+      color: #00593D;
+      font-family: Arvo;
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 32px;
+      letter-spacing: -0.56px;
+      padding: 20px 10px;
+      border: 2px solid #065f46;
+      border-radius: 6px;
+      margin-bottom: 1rem;
+      transition: all 0.3s ease;
+      width: 100%;
+
+      &:hover {
+        background: #003020;
+        color: #ffffff;
+      }
+    }
+
+    .confirm-button {
+      background: #00593D;
+      color: white;
+      margin-left: 5px;
+    }
+
+    .active {
+      background: #003020;
+      color: #ffffff;
+    }
+  }
+}
+
+.my-calendar {
+  width: 100%;
+  background-color: transparent;
+  border: 0px solid transparent;
+
+
+  abbr {
+    color: #000;
+    font-family: Roboto;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -0.56px;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+}
+
+.my-calendar .react-calendar__tile {
+  color: #000;
+  font-family: Roboto;
+  font-size: 2px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.56px;
+  margin-bottom: 1rem;
+
+}
+
+.my-calendar .react-calendar__tile--now {
+  background: #4ade80;
+  color: white;
+}
+
+.my-calendar .react-calendar__tile--active {
+  background: #166534;
+  color: white;
+}
+
+.my-calendar .react-calendar__tile--hover {
+  background: #34d399;
+  color: white;
+}
+
+.my-calendar .react-calendar__navigation__label__labelText {
+  color: #000;
+  font-family: Roboto;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.56px;
+}
+
+.my-calendar .react-calendar__navigation__arrow {
+  color: #166534;
+}
+
+.my-calendar .react-calendar__tile--hasActive:hover {
+  background: #166534;
+  color: white;
+}
+
+.my-calendar .react-calendar__tile {
+  color: #000;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.56px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.my-calendar .react-calendar__tile:hover {
+  background-color: #34d399;
+  color: white;
+}
+
+.my-calendar .react-calendar__tile--active {
+  background-color: #166534;
+  color: white;
+}
+
+.my-calendar .react-calendar__tile--now {
+  background-color: #4ade80;
+  color: white;
+}
+
+.react-calendar__month-view__weekdays__weekday {
+  padding: 1rem 0;
+}
+
+.time-slot {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 1024px) {
+  .consultation-scheduler {
+    padding: 2rem 1rem;
+
+    h1 {
+      font-size: 48px;
+      line-height: 58px;
+    }
+
+    .main-container {
+      flex-direction: column;
+      height: auto;
+    }
+
+    .profile-card {
+      width: 100%;
+      padding: 4rem 2rem;
+      border-right: none;
+      border-bottom: 1px solid #000;
+    }
+
+    .calendar-section {
+      width: 100%;
+      padding: 3rem;
+    }
+
+    .time-selector {
+      width: 100%;
+      padding: 3rem;
+      border-left: none;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .consultation-scheduler {
+    padding: 1.5rem 0.5rem;
+
+    h1 {
+      font-size: 36px;
+      line-height: 46px;
+    }
+
+    .profile-card {
+      padding: 3rem 1rem;
+
+      h3 {
+        font-size: 16px;
+      }
+
+      h6 {
+        font-size: 22px;
+      }
+
+      .details p {
+        font-size: 16px;
+      }
+    }
+
+    .calendar-section {
+      padding: 2rem;
+    }
+
+    .time-selector {
+      padding: 2rem;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .consultation-scheduler {
+    h1 {
+      font-size: 28px;
+      line-height: 36px;
+    }
+
+    .main-container {
+      box-shadow: none;
+    }
+
+    .profile-card {
+      padding: 2rem 1rem;
+
+      .profile-picture {
+        width: 4rem;
+        height: 4rem;
+      }
+
+      h3,
+      h6 {
+        font-size: 18px;
+      }
+    }
+
+    .calendar-section {
+      padding: 1.5rem;
+    }
+
+    .time-selector {
+      padding: 1.5rem;
+
+      button {
+        font-size: 20px;
+        padding: 15px 8px;
+      }
+    }
+  }
+}

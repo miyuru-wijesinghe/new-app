@@ -1,0 +1,129 @@
+.cover {
+    background-image: url("/src/assets/cover.png");
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    padding: 0 13%;
+
+    h2 {
+        font-family: 'PT Sans', sans-serif;
+        color: #00E499;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: -0.36px;
+        font-weight: 600;
+    }
+
+    h1 {
+        font-family: 'PT Sans', sans-serif;
+        color: #00E499;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 72px;
+        letter-spacing: -1.28px;
+    }
+
+    p {
+        color: #FFF;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: -0.36px;
+    }
+
+    .buttons {
+        margin-top: 2.5rem;
+        display: flex;
+        gap: .5rem;
+
+        button {
+            font-family: "PT Sans";
+            font-size: 28px;
+            font-weight: 400;
+            line-height: 32px;
+            letter-spacing: -0.56px;
+            border-radius: 12px;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+
+            &:first-child {
+                background: #01D48F;
+                color: #ffffff;
+
+                &:hover {
+                    background-color: #2ea77e;
+                }
+            }
+
+            &:last-child {
+                background-color: transparent;
+                color: #01D48F;
+                border: 2px solid #ffffff;
+
+                &:hover {
+                    background-color: #ffffff;
+                    color: #00E499;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .cover {
+        height: 500px;
+        padding: 0 8%;
+
+        h1 {
+            font-size: 48px;
+            line-height: 56px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 22px;
+        }
+
+        .buttons button {
+            font-size: 22px;
+            padding: 8px 16px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .cover {
+        height: auto;
+        padding: 0 4%;
+        text-align: center;
+        align-items: center;
+
+        h2 {
+            font-size: 16px;
+            line-height: 22px;
+        }
+
+        h1 {
+            font-size: 36px;
+            line-height: 42px;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        .buttons {
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+
+            button {
+                width: 100%;
+                font-size: 18px;
+                padding: 10px;
+            }
+        }
+    }
+}

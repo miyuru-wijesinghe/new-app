@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+.appointment-section {
+  max-width: 1680px;
+  margin: auto;
+}
+
+.appointment-wrapper {
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+
+.image-container {
+  width: 60%;
+
+  img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.appointment-form {
+  margin-left: -10rem;
+  width: 40%;
+  border-radius: 20px;
+  background-color: #00E499;
+  padding: 2rem;
+  color: white;
+  text-align: center;
+
+  h2 {
+    color: rgba(242, 255, 244, 0.96);
+    font-family: "PT Sans";
+    font-size: 62px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 80px;
+    letter-spacing: -1.24px;
+  }
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  text-align: left;
+  color: #00593D;
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.36px;
+  margin-bottom: 0.25rem;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #000;
+  background: #EAFFF8;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.3s;
+  color: #000;
+
+  &:focus {
+    border-color: #00A082;
+  }
+}
+
+textarea.form-input {
+  height: auto;
+  resize: vertical;
+}
+
+
+.submit-btn {
+  border-radius: 50px;
+  background: #00593D;
+  display: inline-flex;
+  padding: 10px 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #FFF;
+  font-family: "PT Sans";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 44px;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #065946;
+  }
+}
+
+
+
+@media (max-width: 1439px) {
+
+  .appointment-wrapper {
+    flex-direction: column;
+  }
+
+  @media (min-width: 768px) {
+    .image-container {
+      display: block;
+      width: 50%;
+    }
+
+    .appointment-form {
+      width: 50%;
+      padding: 2rem;
+      margin-left: 0;
+    }
+  }
+
+  .appointment-form h2 {
+    font-size: 1.75rem;
+  }
+
+  .form-label {
+    font-size: 0.9rem;
+  }
+
+  .form-input {
+    height: 50px;
+  }
+
+  .submit-btn {
+    font-size: 1.125rem;
+    padding: 0.75rem 1.75rem;
+  }
+}

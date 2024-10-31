@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+.testimonials {
+    max-width: 1440px;
+    margin: auto;
+}
+
+.bg-green-50 {
+    padding: 3rem 1.5rem;
+}
+
+.title h2 {
+    color: #00593D;
+    font-family: "PT Sans";
+    font-size: 62px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 72px;
+    letter-spacing: -1.24px;
+    margin-bottom: 1.5rem;
+    text-align: left !important;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: -16rem;
+        width: 220px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        height: 15px;
+        background-color: #2EFFBA;
+        margin-top: 40px;
+    }
+}
+
+.max-w-4xl {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.swiper-slide .bg-white {
+    display: flex;
+    border-radius: 18px;
+    background: #EAFFF8;
+    box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+    max-width: 90%;
+    margin: 9px auto;
+    height: 414px;
+    flex-direction: column;
+    justify-content: center;
+
+    &:hover {
+        transform: scale(1.03);
+    }
+}
+
+.swiper-slide .w-24 {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.swiper-slide .text-gray-700 {
+    color: #000;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.36px;
+    margin-bottom: 1rem;
+}
+
+.swiper-slide .flex .text-yellow-400 {
+    font-size: 1.5rem;
+    color: #ffc107;
+}
+
+.swiper-pagination-bullet {
+    background-color: #2EFFBA;
+    opacity: 0.6;
+    width: 12px;
+    height: 12px;
+    margin: 0 4px;
+
+    &-active {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .swiper-slide .bg-white {
+        height: auto;
+        padding: 1.5rem;
+        max-width: 95%;
+    }
+
+    .title h2 {
+        font-size: 48px;
+        line-height: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .swiper-slide .bg-white {
+        padding: 1rem;
+    }
+
+    .title h2 {
+        font-size: 36px;
+        line-height: 48px;
+    }
+}
+
+@media (max-width: 640px) {
+    .swiper-slide .bg-white {
+        height: auto;
+        padding: 1rem;
+        max-width: 90%;
+    }
+
+    .title h2 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+}

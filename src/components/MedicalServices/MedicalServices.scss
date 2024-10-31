@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+.medical-services {
+  padding: 4rem 2rem;
+  max-width: 1530px;
+  margin: auto;
+
+  h2 {
+    color: #00593D;
+    font-family: "PT Sans";
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 72px;
+    letter-spacing: -1.28px;
+
+    @media (max-width: 1024px) {
+      font-size: 48px;
+      line-height: 54px;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 36px;
+      line-height: 44px;
+    }
+  }
+
+  .text-green {
+    color: #00E499;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+
+    @media (max-width: 1024px) {
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.5rem;
+
+    @media (max-width: 1024px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .service-card {
+    width: 100%;
+    max-width: 260px;
+    height: auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    img {
+      height: 100px;
+      width: 100px;
+      margin-bottom: 1rem;
+
+      @media (max-width: 768px) {
+        height: 80px;
+        width: 80px;
+      }
+    }
+
+    h3 {
+      color: #00593D;
+      font-family: "PT Sans";
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 24px;
+      letter-spacing: -0.36px;
+
+      @media (max-width: 768px) {
+        font-size: 16px;
+      }
+    }
+
+    p {
+      color: #00E499;
+      font-family: Roboto;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20px;
+      text-align: center;
+      letter-spacing: -0.32px;
+
+      @media (max-width: 768px) {
+        font-size: 14px;
+      }
+    }
+  }
+}
