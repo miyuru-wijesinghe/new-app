@@ -38,21 +38,24 @@ const Testimonials = () => {
         </h2>
       </div>
 
-      <Swiper
-        modules={[Navigation, Pagination, Autoplay]}
-        spaceBetween={20}
-        slidesPerView={3}
-        pagination={{ clickable: true }}
-        navigation
-        autoplay={{ delay: 3000, disableOnInteraction: false }}
-        loop={true}
-        breakpoints={{
-          640: { slidesPerView: 1 },
-          768: { slidesPerView: 2 },
-          1024: { slidesPerView: 3 },
-        }}
-        className=" mx-auto"
-      >
+        <Swiper
+            modules={[Navigation, Pagination, Autoplay]}
+            spaceBetween={20}
+            slidesPerView={3}
+            pagination={{ clickable: true }}
+            navigation
+            autoplay={{ delay: 3000, disableOnInteraction: false }}
+            loop={true}
+            breakpoints={{
+                0: { slidesPerView: 1 },
+                640: { slidesPerView: 1 },
+                768: { slidesPerView: 2 },
+                1024: { slidesPerView: 3 },
+            }}
+            className="mx-auto"
+        >
+
+
         {testimonials.map((testimonial) => (
           <SwiperSlide key={testimonial.id}>
             <div className="bg-white rounded-lg shadow-md p-6 text-center">

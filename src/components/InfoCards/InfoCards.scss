@@ -87,6 +87,7 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
         padding: 0 2rem;
+        max-width: 620px;
     }
 
     h3 {
@@ -105,9 +106,11 @@
 @media (max-width: 768px) {
     .cards {
         margin-top: 0;
-        grid-template-columns: 1fr;
         gap: 1.5rem;
-        padding: 0 1rem;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     h3 {

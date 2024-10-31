@@ -123,6 +123,10 @@
                 width: 100%;
                 font-size: 18px;
                 padding: 10px;
+
+                &:last-child {
+                        margin-left: 0;
+                }
             }
         }
     }

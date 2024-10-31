@@ -298,6 +298,12 @@
 }
 
 @media (max-width: 1024px) {
+  .my-calendar abbr {
+    font-size: 20px;
+  }
+  .my-calendar .react-calendar__navigation__label__labelText {
+    font-size: 20px;
+  }
   .consultation-scheduler {
     padding: 2rem 1rem;
 
@@ -332,6 +338,10 @@
 }
 
 @media (max-width: 768px) {
+
+  .my-calendar .react-calendar__navigation__label__labelText {
+    font-size: 16px;
+  }
   .consultation-scheduler {
     padding: 1.5rem 0.5rem;
 
@@ -367,6 +377,9 @@
 }
 
 @media (max-width: 480px) {
+  .my-calendar .react-calendar__navigation__label__labelText {
+    font-size: 12px;
+  }
   .consultation-scheduler {
     h1 {
       font-size: 28px;

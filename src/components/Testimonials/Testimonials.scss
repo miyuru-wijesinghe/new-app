@@ -132,3 +132,48 @@
         line-height: 36px;
     }
 }
+
+@media (max-width: 480px) {
+    .testimonials {
+        padding: 1.5rem 0.75rem; // Less padding for small screens
+    }
+
+    .swiper-slide .bg-white {
+        padding: 1rem;
+        max-width: 100%; // Ensures it fits within the screen
+        height: auto; // Allow height to adjust based on content
+    }
+
+    .title h2 {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 1rem;
+    }
+
+    .swiper-slide .w-24 {
+        width: 80px;
+        height: 80px;
+    }
+
+    .swiper-slide .text-gray-700 {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 0.75rem;
+    }
+
+    .swiper-slide .flex .text-yellow-400 {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .swiper-slide .bg-white {
+        padding: 1rem;
+        max-width: 90%; // Make it fit better within mobile view
+    }
+
+    .title h2 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+}

@@ -48,12 +48,16 @@
       line-height: 80px;
       letter-spacing: -1.24px;
 
-      @media (min-width: 768px) {
-        font-size: 3rem;
+
+
+      @media (max-width: 1024px) {
+        font-size: 48px;
+        text-align: center;
       }
 
-      @media (min-width: 1024px) {
-        font-size: 3.5rem;
+      @media (max-width: 768px) {
+        font-size: 36px;
+        line-height: 1.5;
       }
     }
 

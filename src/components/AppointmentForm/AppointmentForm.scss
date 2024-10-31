@@ -104,6 +104,17 @@ textarea.form-input {
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .appointment-form {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .image-container {
+    display: block;
+    width: 100%;
+  }
+}
 
 
 @media (max-width: 1439px) {

@@ -85,3 +85,31 @@
     margin-bottom: 1rem;
   }
 }
+
+@media screen and (max-width: 1366px) {
+  .profileImage {
+    position: relative;
+    top: 0;
+    left: 0;
+    max-width: 400px;
+    max-height: 400px;
+
+  }
+  .contact h2 {
+    font-size: 48px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact h2 {
+    font-size: 32px;
+  }
+
+  .contact h6 {
+    font-size: 24px;
+  }
+
+  .contact .phone a span {
+    font-size: 22px;
+  }
+}
