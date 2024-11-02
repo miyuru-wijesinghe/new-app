@@ -4,7 +4,7 @@ import facebookIcon from '../../assets/icons/facebook-icon.png';
 import instagramIcon from '../../assets/icons/instagram-icon.png';
 import linkedinIcon from '../../assets/icons/linkedin-icon.png';
 import youtubeIcon from '../../assets/icons/youtube-icon.png';
-import '@fontsource/roboto/500.css';
+import '@fontsource/roboto';
 import '@fontsource/pt-sans';
 import './Header.scss';
 
@@ -60,9 +60,9 @@ const Header = () => {
   const toggleDropdown = (title: string) => setActiveDropdown(activeDropdown === title ? null : title);
 
   return (
-    <header className="text-white font-sans">
+    <header>
       {/* Top Bar */}
-      <div className="top-bar flex justify-between items-center px-4 py-2 text-sm">
+      <div className="container top-bar flex justify-between items-center px-4 py-2 text-sm">
         <div className="phone">
           <a className="flex" href="tel:+919810532834">
             <img src={phoneIcon} alt="Phone Icon" />
@@ -126,7 +126,7 @@ const Header = () => {
             </nav>
             <a
               href="#"
-              className="mt-4 block px-4 py-2 text-center text-teal-500 border border-teal-500 rounded-full hover:bg-teal-500 hover:text-white transition-colors"
+              className="mt-4 block px-4 py-2 text-center border rounded-full hover:bg-teal-500 hover:text-white transition-colors"
             >
               BMI Calculator
             </a>

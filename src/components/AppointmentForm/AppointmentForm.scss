@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
 
 .appointment-section {
-  max-width: 1680px;
   margin: auto;
+  padding: 3rem 1rem;
 }
 
 .appointment-wrapper {
@@ -38,7 +38,6 @@
     color: rgba(242, 255, 244, 0.96);
     font-family: "PT Sans";
     font-size: 62px;
-    font-style: normal;
     font-weight: 700;
     line-height: 80px;
     letter-spacing: -1.24px;
@@ -55,10 +54,8 @@
   color: #00593D;
   font-family: "PT Sans";
   font-size: 18px;
-  font-style: normal;
   font-weight: 700;
   line-height: 24px;
-  letter-spacing: -0.36px;
   margin-bottom: 0.25rem;
 }
 
@@ -71,6 +68,7 @@
   outline: none;
   transition: border-color 0.3s;
   color: #000;
+  height: 3rem;
 
   &:focus {
     border-color: #00A082;
@@ -81,7 +79,6 @@ textarea.form-input {
   height: auto;
   resize: vertical;
 }
-
 
 .submit-btn {
   border-radius: 50px;
@@ -94,7 +91,6 @@ textarea.form-input {
   color: #FFF;
   font-family: "PT Sans";
   font-size: 32px;
-  font-style: normal;
   font-weight: 600;
   line-height: 44px;
   transition: background-color 0.3s ease;
@@ -104,36 +100,68 @@ textarea.form-input {
   }
 }
 
-@media screen and (max-width: 1024px) {
-  .appointment-form {
-    margin-left: 0;
-    width: 100%;
+@media screen and (max-width: 1640px) {
+  .appointment-form h2 {
+    font-size: 55px;
   }
-
-  .image-container {
-    display: block;
-    width: 100%;
+  .appointment-section {
+    padding: 3rem 4rem;
   }
 }
 
+@media screen and (max-width: 1440px) {
+  .appointment-section {
+    padding: 3rem 1rem;
+  }
 
-@media (max-width: 1439px) {
+  .appointment-form h2 {
+    font-size: 45px;
+    line-height: 60px;
+  }
 
+  .form-label {
+    font-size: 16px;
+  }
+
+  .image-container {
+    width: 65%;
+  }
+
+  .appointment-form {
+    width: 35%;
+    padding: 1rem;
+  }
+
+  .submit-btn {
+    padding: 5px 20px;
+    gap: 8px;
+    font-size: 28px;
+    line-height: 40px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .appointment-form h2 {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 1199px) {
   .appointment-wrapper {
     flex-direction: column;
   }
 
-  @media (min-width: 768px) {
-    .image-container {
-      display: block;
-      width: 50%;
-    }
+  .appointment-section {
+    padding: 2rem 4rem;
+  }
 
-    .appointment-form {
-      width: 50%;
-      padding: 2rem;
-      margin-left: 0;
-    }
+  .image-container {
+    width: 100% !important;
+  }
+
+  .appointment-form {
+    width: 100% !important;
+    margin-left: 0rem;
   }
 
   .appointment-form h2 {
@@ -151,5 +179,29 @@ textarea.form-input {
   .submit-btn {
     font-size: 1.125rem;
     padding: 0.75rem 1.75rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .appointment-section {
+    padding: 1.5rem;
+  }
+
+  .appointment-form {
+    padding: 1.5rem;
+    h2 {
+      font-size: 28px;
+      line-height: 1.3;
+    }
+  }
+
+  .form-input {
+    height: auto;
+    padding: 0.5rem;
+  }
+
+  .submit-btn {
+    font-size: 24px;
+    padding: 8px 20px;
   }
 }

@@ -1,4 +1,5 @@
 import '@fontsource/roboto';
+import '@fontsource/roboto/500.css';
 import phoneIcon from '../../assets/icons/phone-icon.png';
 import './InfoCards.scss';
 

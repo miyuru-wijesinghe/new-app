@@ -2,7 +2,7 @@ header {
     background: #00E499;
 
     .top-bar {
-        max-width: 1440px;
+        //max-width: 1440px;
         margin: auto;
     }
 
@@ -50,13 +50,67 @@ header {
     }
 }
 
-@media screen and (max-width: 768px) {
+
+
+@media screen and (max-width: 1199px) {
     header nav button {
         font-size: 20px;
     }
-
     header .navigation .bmi-btn {
         font-size: 20px;
+    }
+    header nav a {
+        color: #000;
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 992px) {
+    header nav button {
+        font-size: 18px;
+    }
+    header .navigation .bmi-btn {
+        font-size: 18px;
+    }
+    header nav a {
+        font-size: 18px;
+    }
+    .px-6 {
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
+    button {
+        padding: 8px;
+    }
+}
+@media screen and (max-width: 768px) {
+    header nav button {
+        font-size: 16px;
+    }
+
+    header .navigation .bmi-btn {
+        font-size: 16px;
         padding: 10px;
     }
+
+    .px-6 {
+        padding-left: .5rem!important;
+        padding-right: .5rem!important;
+    }
+    .ml-3 {
+        margin-left: 0.25rem;
+    }
+    button {
+        padding: 4px !important;
+    }
+    header nav a {
+        color: #000;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    header .navigation .bmi-btn {
+        font-size: 16px;
+    }
+
 }

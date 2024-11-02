@@ -36,7 +36,7 @@ const services = [
 
 const MedicalServices = () => {
   return (
-    <div className="medical-services bg-light-green py-16 px-8">
+    <section className="container medical-services bg-light-green py-16 px-8">
       {/* Section Header */}
       <div className="text-center mb-12">
         <h2 className="text-4xl font-bold text-dark-green">Our Medical Services</h2>
@@ -55,7 +55,7 @@ const MedicalServices = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

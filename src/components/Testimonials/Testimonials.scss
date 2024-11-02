@@ -3,10 +3,41 @@
 .testimonials {
     max-width: 1440px;
     margin: auto;
+    padding-bottom: 2.5rem; // Adds extra space for pagination bullets
+
+    .swiper-container {
+        padding-bottom: 2.5rem; // Adjust as needed for pagination spacing
+
+        .swiper-pagination {
+            position: absolute;
+            bottom: 0; // Positions it at the very bottom of the container
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 8px;
+
+            .swiper-pagination-bullet {
+                background-color: #2EFFBA;
+                opacity: 0.6;
+                width: 12px;
+                height: 12px;
+
+                &-active {
+                    opacity: 1;
+                    background-color: #00593D; // Active color
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}
+.px-6 {
+    padding-left: 6rem;
+    padding-right: 6rem;
 }
 
 .bg-green-50 {
-    padding: 3rem 1.5rem;
+    padding: 2rem 1.5rem;
 }
 
 .title h2 {
@@ -23,7 +54,7 @@
     &::before {
         content: "";
         position: absolute;
-        left: -16rem;
+        left: -14.5rem;
         width: 220px;
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
@@ -96,6 +127,28 @@
 }
 
 /* Responsive Styles */
+@media screen and (max-width: 1640px) {
+    .px-6 {
+        padding-left: 7rem;
+        padding-right: 7rem;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .px-6 {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .px-6 {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+}
+
 @media (max-width: 1024px) {
     .swiper-slide .bg-white {
         height: auto;
@@ -107,6 +160,16 @@
         font-size: 48px;
         line-height: 60px;
     }
+
+    .px-6 {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    .title h2::before {
+        left: -14.5rem;
+        margin-top: 29px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -115,8 +178,17 @@
     }
 
     .title h2 {
-        font-size: 36px;
+        font-size: 42px;
         line-height: 48px;
+    }
+
+    .title h2::before {
+        margin-top: 21px;
+    }
+
+    section.container.testimonials {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
     }
 }
 
@@ -135,13 +207,17 @@
 
 @media (max-width: 480px) {
     .testimonials {
-        padding: 1.5rem 0.75rem; // Less padding for small screens
+        padding: 1.5rem 5rem;
+    }
+
+    .title h2::before {
+        margin-top: 14px;
     }
 
     .swiper-slide .bg-white {
         padding: 1rem;
-        max-width: 100%; // Ensures it fits within the screen
-        height: auto; // Allow height to adjust based on content
+        max-width: 100%;
+        height: auto;
     }
 
     .title h2 {
@@ -173,7 +249,44 @@
     }
 
     .title h2 {
-        font-size: 28px;
+        font-size: 42px;
         line-height: 36px;
+    }
+}
+
+.swiper-pagination-bullet {
+    opacity: 1;
+    width: 15px;
+    height: 15px;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #00593D !important;
+    width: 16px;
+    height: 16px;
+}
+
+.swiper-slide {
+    padding: 4rem 0;
+}
+@media (max-width: 640px) {
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+    }
+
+    .swiper-slide .bg-white {
+        display: flex;
+        flex-direction: column;
+        align-items: center; // Center content within the card
+        padding: 1rem;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .swiper-slide .w-24 {
+        margin: 0 auto; // Center the image within the container
+        display: flex;
+        justify-content: center;
     }
 }

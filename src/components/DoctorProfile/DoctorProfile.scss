@@ -34,7 +34,7 @@
     }
 
     ul {
-      font-size: 1rem;
+      align-content: flex-start;
       line-height: 1.6;
       color: #fff;
       position: relative;
@@ -42,10 +42,9 @@
       list-style: none;
       padding: 0;
 
-      li::before {
+      li::marker {
         content: '•';
         color: #fff;
-        margin-right: 8px;
       }
 
       li {
@@ -56,6 +55,7 @@
         line-height: 24px;
         letter-spacing: -0.36px;
         padding-bottom: 10px;
+        padding-left: 10px;
         width: 75%;
       }
     }
@@ -170,11 +170,28 @@
       margin-top: 1rem;
     }
 
-    .consult-btn,
-    .appointment-btn {
-      padding: 0.75rem 1.25rem;
+    .consult-btn, .doctor-profile .appointment-btn {
+      padding: 0.5rem!important;
       width: 100%;
-      font-size: 20px !important;
+      font-size: 15px !important;
     }
+  }
+}
+
+@media (max-width: 1119px) {
+  .doctor-profile .info-section h2 {
+    font-size: 48px;
+  }
+  .doctor-profile .info-section ul li {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .doctor-profile .info-section .consult-btn {
+    font-size: 22px;
+  }
+  .doctor-profile .info-section .appointment-btn {
+    font-size: 22px;
   }
 }

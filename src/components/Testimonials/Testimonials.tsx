@@ -1,11 +1,12 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import { Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import char1 from '../../assets/char-1.png';
 import char2 from '../../assets/char-2.png';
 import char3 from '../../assets/char-3.png';
+import char4 from '../../assets/char-4.png';
 import './Testimonials.scss';
 
 const testimonials = [
@@ -27,11 +28,17 @@ const testimonials = [
     text: 'Aliquam a augue suscipit, luctus neque purus ipsum neque dolor primis libero at tempus, blandit posuere ligula varius congue cursus porta feugiat',
     rating: 4,
   },
+  {
+    id: 4,
+    image: char4,
+    text: 'Aliquam a augue suscipit, luctus neque purus ipsum neque dolor primis libero at tempus, blandit posuere ligula varius congue cursus porta feugiat',
+    rating: 3,
+  },
 ];
 
 const Testimonials = () => {
   return (
-    <section className="testimonials bg-green-50 py-12 px-6">
+    <section className="container testimonials py-12 px-6">
       <div className="title mb-8">
         <h2 className="text-4xl font-bold text-green-800 inline-block relative">
           Testimonials
@@ -39,11 +46,10 @@ const Testimonials = () => {
       </div>
 
         <Swiper
-            modules={[Navigation, Pagination, Autoplay]}
+            modules={[Pagination, Autoplay]}
             spaceBetween={20}
             slidesPerView={3}
             pagination={{ clickable: true }}
-            navigation
             autoplay={{ delay: 3000, disableOnInteraction: false }}
             loop={true}
             breakpoints={{
@@ -54,28 +60,30 @@ const Testimonials = () => {
             }}
             className="mx-auto"
         >
-
-
-        {testimonials.map((testimonial) => (
-          <SwiperSlide key={testimonial.id}>
-            <div className="bg-white rounded-lg shadow-md p-6 text-center">
-              <img
-                src={testimonial.image}
-                alt="User"
-                className="w-24 h-24 rounded-full mx-auto mb-6"
-              />
-              <p className="text-gray-700 mb-4">{testimonial.text}</p>
-              <div className="flex justify-center">
-                {[...Array(5)].map((_, i) => (
-                  <span key={i} className="text-yellow-400">
+            {testimonials.map((testimonial) => (
+                <SwiperSlide key={testimonial.id}>
+                  <div className="bg-white rounded-lg shadow-md p-6 text-center">
+                    <div className="w-24 mx-auto">
+                      <img
+                          src={testimonial.image}
+                          alt="User"
+                          className="w-24 h-24 rounded-full mb-6"
+                      />
+                    </div>
+                    <p className="text-gray-700 mb-4">{testimonial.text}</p>
+                    <div className="flex justify-center">
+                      {[...Array(5)].map((_, i) => (
+                          <span key={i} className="text-yellow-400">
                     {i < testimonial.rating ? '★' : '☆'}
-                  </span>
-                ))}
-              </div>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+                </span>
+                      ))}
+                    </div>
+                  </div>
+                </SwiperSlide>
+
+            ))}
+        </Swiper>
+
     </section>
   );
 };

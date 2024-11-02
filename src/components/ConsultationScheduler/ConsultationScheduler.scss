@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap');
 
 .consultation-scheduler {
-  padding: 3rem 1.5rem;
-  max-width: 1490px;
+  padding: 3rem 6rem;
+  //max-width: 1490px;
   margin: auto;
   position: relative;
 
@@ -14,14 +14,14 @@
     font-style: normal;
     font-weight: 700;
     line-height: 72px;
-    
+
     letter-spacing: -1.28px;
     margin-bottom: 3rem;
 
     &::before {
       content: "";
       position: absolute;
-      left: -15rem;
+      left: -9rem;
       width: 220px;
       border-top-right-radius: 10px;
       border-bottom-right-radius: 10px;
@@ -34,7 +34,7 @@
   .main-container {
     display: flex;
     background-color: #a7f3d0;
-    border-radius: 16px;
+    border-radius: 2rem;
     overflow: hidden;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     height: 650px;
@@ -97,6 +97,7 @@
       font-weight: 500;
       line-height: 32px;
       letter-spacing: -0.56px;
+      padding-top: .5rem;
     }
 
     .details {
@@ -248,7 +249,8 @@
 }
 
 .my-calendar .react-calendar__navigation__arrow {
-  color: #166534;
+  color: #000000;
+  font-size: 2rem;
 }
 
 .my-calendar .react-calendar__tile--hasActive:hover {
@@ -288,6 +290,10 @@
   color: white;
 }
 
+.react-calendar__navigation button {
+  min-width: 99px;
+}
+
 .react-calendar__month-view__weekdays__weekday {
   padding: 1rem 0;
 }
@@ -295,6 +301,56 @@
 .time-slot {
   display: flex;
   flex-direction: row;
+}
+
+@media screen and (max-width: 1640px) {
+  .consultation-scheduler .profile-card h6 {
+    font-size: 24px;
+  }
+
+  .react-calendar__navigation button {
+    min-width: 44px;
+  }
+
+  .react-calendar__navigation button {
+    width: 30px;
+  }
+
+  .consultation-scheduler .time-selector button {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .consultation-scheduler .profile-card h6 {
+    font-size: 20px;
+  }
+
+  .consultation-scheduler .profile-card .details p {
+    gap: 10px;
+    font-size: 16px;
+  }
+
+  .consultation-scheduler {
+    padding: 3rem 1rem;
+  }
+
+  .consultation-scheduler h1::before {
+    left: -13.5rem;
+  }
+
+  .consultation-scheduler .time-selector button {
+    font-size: 20px;
+    padding: 20px 5px;
+  }
+
+  .consultation-scheduler .time-selector {
+    padding: 4rem 2rem;
+  }
+
+  .my-calendar abbr {
+    font-size: 26px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -305,7 +361,7 @@
     font-size: 20px;
   }
   .consultation-scheduler {
-    padding: 2rem 1rem;
+    padding: 2rem 4rem;
 
     h1 {
       font-size: 48px;
@@ -339,6 +395,10 @@
 
 @media (max-width: 768px) {
 
+  .consultation-scheduler h1::before {
+    margin-top: 18px;
+  }
+
   .my-calendar .react-calendar__navigation__label__labelText {
     font-size: 16px;
   }
@@ -367,7 +427,7 @@
     }
 
     .calendar-section {
-      padding: 2rem;
+      padding: 1rem;
     }
 
     .time-selector {
@@ -377,6 +437,11 @@
 }
 
 @media (max-width: 480px) {
+
+  .consultation-scheduler h1::before {
+    margin-top: 14px;
+  }
+
   .my-calendar .react-calendar__navigation__label__labelText {
     font-size: 12px;
   }
