@@ -7,6 +7,8 @@ import char1 from '../../assets/char-1.png';
 import char2 from '../../assets/char-2.png';
 import char3 from '../../assets/char-3.png';
 import char4 from '../../assets/char-4.png';
+import '@fontsource/roboto';
+import '@fontsource/pt-sans/700.css';
 import './Testimonials.scss';
 
 const testimonials = [
@@ -40,7 +42,7 @@ const Testimonials = () => {
   return (
     <section className="container testimonials py-12 px-6">
       <div className="title mb-8">
-        <h2 className="text-4xl font-bold text-green-800 inline-block relative">
+        <h2 className="inline-block relative">
           Testimonials
         </h2>
       </div>
@@ -62,7 +64,7 @@ const Testimonials = () => {
         >
             {testimonials.map((testimonial) => (
                 <SwiperSlide key={testimonial.id}>
-                  <div className="bg-white rounded-lg shadow-md p-6 text-center">
+                  <div className="swiper-div rounded-lg shadow-md p-6 text-center">
                     <div className="w-24 mx-auto">
                       <img
                           src={testimonial.image}
@@ -70,10 +72,10 @@ const Testimonials = () => {
                           className="w-24 h-24 rounded-full mb-6"
                       />
                     </div>
-                    <p className="text-gray-700 mb-4">{testimonial.text}</p>
+                    <p className="testimonial-txt mb-4">{testimonial.text}</p>
                     <div className="flex justify-center">
                       {[...Array(5)].map((_, i) => (
-                          <span key={i} className="text-yellow-400">
+                          <span key={i}>
                     {i < testimonial.rating ? '★' : '☆'}
                 </span>
                       ))}

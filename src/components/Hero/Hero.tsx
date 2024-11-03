@@ -3,7 +3,7 @@ import '@fontsource/roboto/400.css';
 import './Hero.scss';
 
 const Hero = () => (
-    <section className="cover bg-green-700 text-white p-8 flex flex-col items-start">
+    <section className="cover p-8 flex flex-col items-start">
         <h2 className="hero-subtitle">Welcome To Our Clinic</h2>
         <h1 className="hero-title">Take Care Of <br /> Your Health</h1>
         <p className="hero-description">

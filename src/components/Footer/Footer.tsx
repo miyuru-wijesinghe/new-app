@@ -5,11 +5,11 @@ import './Footer.scss';
 
 const Footer = () => {
   return (
-      <footer className="bg-cover bg-no-repeat text-white footerBackground">
+      <footer className="bg-cover bg-no-repeat footerBackground">
         <div className="container mx-auto py-8 grid grid-cols-1 md:grid-cols-5 gap-8">
 
           {/* About Section */}
-          <div className="about mb-6 md:mb-0">
+          <div className="about card md:mb-0">
             <h2 className="mb-6">Aloy Mukherjee</h2>
             <p className="leading-relaxed">
               Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -18,9 +18,9 @@ const Footer = () => {
           </div>
 
           {/* Company Links */}
-          <div className="company-sec mb-6 md:mb-0">
+          <div className="company-sec card md:mb-0">
             <h3 className="mb-6">Company</h3>
-            <ul className="space-y-1 text-sm">
+            <ul className="space-y-1">
               <li className="hover:text-white cursor-pointer">About Us</li>
               <li className="hover:text-white cursor-pointer">How to work?</li>
               <li className="hover:text-white cursor-pointer">Popular Story</li>
@@ -29,9 +29,9 @@ const Footer = () => {
           </div>
 
           {/* Courses Links */}
-          <div className="courses-sec mb-6 md:mb-0">
+          <div className="courses-sec card md:mb-0">
             <h3 className="mb-6">Courses</h3>
-            <ul className="space-y-1 text-sm">
+            <ul className="space-y-1">
               <li className="hover:text-white cursor-pointer">Categories</li>
               <li className="hover:text-white cursor-pointer">Offline Writing</li>
               <li className="hover:text-white cursor-pointer">Storyboard</li>
@@ -39,9 +39,9 @@ const Footer = () => {
           </div>
 
           {/* Support Links */}
-          <div className="support-sec mb-6 md:mb-0">
+          <div className="support-sec card md:mb-0">
             <h3 className="mb-6">Support</h3>
-            <ul className="space-y-1 text-sm">
+            <ul className="space-y-1">
               <li className="hover:text-white cursor-pointer">FAQ</li>
               <li className="hover:text-white cursor-pointer">Help Center</li>
               <li className="hover:text-white cursor-pointer">Career</li>
@@ -50,9 +50,9 @@ const Footer = () => {
           </div>
 
           {/* Contact Info */}
-          <div className="contact-sec mb-6 md:mb-0">
+          <div className="contact-sec card md:mb-0">
             <h3 className="mb-6">Contact Info</h3>
-            <ul className="space-y-1 text-sm">
+            <ul className="space-y-1">
               <li className="hover:text-white cursor-pointer">+91 99999-99999</li>
               <li className="hover:text-white cursor-pointer">info@aloymukherjee.com</li>
               <li className="hover:text-white cursor-pointer">4th Floor, Delhi, India</li>
@@ -61,7 +61,7 @@ const Footer = () => {
         </div>
 
         {/* Footer Bottom Bar */}
-        <div className="footer-wrapper border-t border-white text-xs text-center mt-8 pt-4 text-gray-200">
+        <div className="footer-wrapper border-t border-white text-xs text-center mt-8 pt-4">
           <p>Copyright 2024 All Rights Reserved by Aloymukherjee.com</p>
           <p>Designed and developed by <img src={footer} alt="Footer Logo" className="footer-logo" /></p>
         </div>

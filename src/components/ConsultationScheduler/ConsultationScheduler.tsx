@@ -6,9 +6,10 @@ import zoom from '../../assets/icons/zoom.png';
 import time from '../../assets/icons/time.png';
 import '@fontsource/roboto';
 import '@fontsource/roboto/500.css';
+import '@fontsource/pt-sans/700.css';
 import './ConsultationScheduler.scss';
 
-const ConsultationScheduler: React.FC = () => {
+const ConsultationScheduler = () => {
   const [selectedDate, setSelectedDate] = useState<Date | null>(null);
   const [selectedTime, setSelectedTime] = useState<string | null>(null);
   const availableTimes = ['09:00 am', '11:00 am', '01:00 pm', '03:00 pm'];

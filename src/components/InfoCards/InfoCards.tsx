@@ -7,8 +7,8 @@ import './InfoCards.scss';
 const InfoCards = () => {
   return (
     <section className="cards grid grid-cols-1 md:grid-cols-4 p-8 text-white">
-      <div className="card card-1 bg-green-400 p-4 shadow-md text-left">
-        <h3 className="font-bold text-lg mb-8 mt-2">Working Time</h3>
+      <div className="card card-1 p-4 shadow-md text-left">
+        <h3 className="mb-8 mt-2">Working Time</h3>
         <div className="space-y-1 flex flex-col gap-5">
           <p className="flex justify-between border-b border-[#003020]"><span>Monday - Friday</span> <span>09:00 - 17:00</span></p>
           <p className="flex justify-between border-b border-[#003020]"><span>Saturday</span> <span>09:00 - 14:00</span></p>

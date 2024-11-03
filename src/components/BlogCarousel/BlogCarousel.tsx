@@ -9,6 +9,8 @@ import blog3 from '../../assets/blog-3.png';
 import blog4 from '../../assets/blog-4.png';
 import blog5 from '../../assets/blog-5.png';
 import '@fontsource/roboto';
+import '@fontsource/roboto/500.css';
+import '@fontsource/pt-sans/700.css';
 import './BlogCarousel.scss';
 
 interface Blog {

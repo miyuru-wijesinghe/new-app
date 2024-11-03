@@ -1,5 +1,7 @@
 import doctor from '../../assets/doctor-2.png';
 import '@fontsource/roboto';
+import '@fontsource/roboto/500.css';
+import '@fontsource/pt-sans/700.css';
 import phoneIcon from '../../assets/icons/phone-icon.png';
 
 import './Contact.scss';
@@ -19,9 +21,9 @@ const Contact = () => {
 
           {/* Contact Information */}
           <div className="p-6 text-white">
-            <h2 className="text-3xl font-bold mb-4">Contact - Us</h2>
-            <h6 className="text-lg font-semibold mb-8">Please feel free to contact us for emergency case.</h6>
-            <p className="text-sm leading-relaxed mb-4">
+            <h2 className="mb-4">Contact - Us</h2>
+            <h6 className="mb-8">Please feel free to contact us for emergency case.</h6>
+            <p className="leading-relaxed mb-4">
               Lorem Ipsum is simply dummy text of the printing and typesetting industry.
               Lorem <br /> Ipsum has been the industry's standard dummy a type specimen book.
             </p>

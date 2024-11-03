@@ -94,7 +94,7 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* BMI Calculator Button on the Right */}
+          {/* BMI Calculator Button */}
           <a
             href="#"
             className="bmi-btn hidden md:block ml-auto px-4 py-2 border rounded-full hover:bg-teal-500 hover:text-white transition-colors"

@@ -3,7 +3,8 @@ import icon2 from '../../assets/Endoscopic.png';
 import icon3 from '../../assets/Varicocelectomy.png';
 import icon4 from '../../assets/Appendix.png';
 import icon5 from '../../assets/Gallbladder.png';
-
+import '@fontsource/roboto';
+import '@fontsource/pt-sans/700.css';
 import './MedicalServices.scss';
 
 const services = [
@@ -36,11 +37,11 @@ const services = [
 
 const MedicalServices = () => {
   return (
-    <section className="container medical-services bg-light-green py-16 px-8">
+    <section className="container medical-services py-16 px-8">
       {/* Section Header */}
       <div className="text-center mb-12">
-        <h2 className="text-4xl font-bold text-dark-green">Our Medical Services</h2>
-        <p className="text-lg text-green mt-2">
+        <h2>Our Medical Services</h2>
+        <p className="text-green mt-2">
           Aliquam a augue suscipit, luctus neque purus ipsum neque dolor primis libero <br></br> at tempus, blandit posuere ligula varius congue cursus porta feugiat
         </p>
       </div>
@@ -48,10 +49,10 @@ const MedicalServices = () => {
       {/* Service Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5">
         {services.map((service, index) => (
-          <div key={index} className="service-card bg-white p-6 rounded-lg shadow-lg text-center">
+          <div key={index} className="service-card p-6 rounded-lg shadow-lg text-center">
             <img src={service.icon} alt={`${service.title} icon`} className="mx-auto mb-4 h-16 w-16" />
-            <h3 className="text-xl font-semibold text-dark-green mb-2">{service.title}</h3>
-            <p className="text-green text-sm">{service.description}</p>
+            <h3 className="mb-2">{service.title}</h3>
+            <p>{service.description}</p>
           </div>
         ))}
       </div>

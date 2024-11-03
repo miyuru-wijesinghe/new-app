@@ -1,4 +1,6 @@
 import appointment from "../../assets/appointment.png";
+import "@fontsource/pt-sans/";
+import "@fontsource/pt-sans/700.css";
 import "./AppointmentForm.scss";
 
 const AppointmentForm = () => {
@@ -16,7 +18,7 @@ const AppointmentForm = () => {
           </div>
 
           {/* Right Form Section */}
-          <div className="appointment-form bg-teal-500 text-white p-8 w-full">
+          <div className="appointment-form p-8 w-full">
             <h2 className="text-2xl font-bold mb-4 text-center">Make an Appointment</h2>
             <form className="space-y-4">
               <div className="grid grid-cols-2 gap-4">
